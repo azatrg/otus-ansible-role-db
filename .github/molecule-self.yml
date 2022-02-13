@@ -6,8 +6,15 @@ jobs:
   molecule:
     runs-on: self-hosted
 
-    steps:
-    - name: Checkout this repo
-      uses: actions/checkout@v2
-      with:
-        ref: ${{ github.ref }}
+
+   steps:
+    - name: test connections
+    - run: ping github.com
+
+
+   # steps:
+    # - name: Checkout this repo
+    #   uses: actions/checkout@v2
+    #   with:
+    #     ref: ${{ github.ref }}
+
