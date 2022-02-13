@@ -6,8 +6,7 @@ jobs:
   molecule:
     runs-on: self-hosted
 
-
-   steps:
+    steps:
     - name: test connections
     - run: ping github.com
 
