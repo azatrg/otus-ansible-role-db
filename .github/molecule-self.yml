@@ -1,0 +1,13 @@
+name: Run Molecule to test Ansible roles
+
+on: [push, pull_request]
+
+jobs:
+  molecule:
+    runs-on: self-hosted
+
+    steps:
+    - name: Checkout this repo
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.ref }}
