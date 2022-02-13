@@ -12,8 +12,8 @@ Any pre-requisites that may not be covered by Ansible itself or the role should 
 Role Variables
 --------------
 
-mongo_port: 27017
-mongo_bind_ip: 0.0.0.0
+- mongo_port: 27017
+- mongo_bind_ip: 0.0.0.0
 
 Dependencies
 ------------
